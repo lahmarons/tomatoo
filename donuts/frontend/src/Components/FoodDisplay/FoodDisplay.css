@@ -1,0 +1,23 @@
+.food_display {
+  margin-top: 30px;
+  text-align: center;
+}
+.food_display h2 {
+  font-size: max(2vw, 24px);
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: #262626;
+}
+.food_display_list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  margin-top: 30px;
+  gap: 30px;
+  row-gap: 50px;
+}
+.food_item_info {
+  padding: 20px;
+  
+}
+

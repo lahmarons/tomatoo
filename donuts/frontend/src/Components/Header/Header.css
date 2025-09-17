@@ -1,0 +1,70 @@
+.header {
+  height: 34vw;
+  margin: 30px auto;
+  background: url(/header_img.png);
+  background-size: contain;
+  position: relative;
+}
+.header-contenets {
+  position: absolute;
+  display: flex;
+  gap: 1.5vw;
+  flex-direction: column;
+  align-items: start;
+  max-width: 50%;
+  bottom: 10%;
+  left: 6vw;
+  animation: fedIn 3s;
+}
+.header-contenets h2 {
+  font-weight: 500;
+  color: white;
+  font-size: max(4.5vw, 22px);
+  font-family: "Great Vibes", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.header-contenets p {
+  color: white;
+  font-size: 1vw;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.header-contenets button {
+  border: none;
+  color: #747474;
+  font-weight: 500;
+  padding: 1vw 2.3vw;
+  background-color: white;
+  font-size: max(1vw, 13px);
+  border-radius: 50px;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@media(max-width:1050px){
+  .header{
+    height: 38vw;
+
+  }
+  .header-contenets{
+    max-width: 45%;
+
+  }
+}
+@media(max-width:750px){
+  
+  .header-contenets{
+    max-width: 55%;
+    
+  }
+  .header-contenets p{
+    display: none;
+
+  }
+  .header-contenets button{
+    padding: 2vw 4vw;
+    
+  }
+}
